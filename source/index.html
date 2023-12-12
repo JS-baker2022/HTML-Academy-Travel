@@ -7,17 +7,41 @@
     <meta name="description" content="Второй проект производства HTML Academy">
     <title>HTML-Academy-Travel</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-300.woff2.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-500.woff2.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-600.woff2.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-700.woff2.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-800.woff2.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-500.woff2 as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-800.woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header-example">
+        <div class="container">
+          <div class="header-example__container">
+            <a class="header-example__logo" href="#">
+              <span class="visually-hidden">Логотип турфирмы Lifetour.</span>
+              <svg width="142" height="42">
+                <use href="img/sprite.svg#logotype"></use>
+              </svg>
+            </a>
+            <nav class="header-example__nav navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="#">Туры</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Обучение</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Отзывы</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Фотографии</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <a class="header-example__link" href="tel:88007253232">8 800 725-32-32</a>
+          </div>
+        </div>
       </header>
       <main>
         <section class="intro">
