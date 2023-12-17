@@ -85,11 +85,13 @@
 
   &__git-link {
     display: flex;
-    margin: 0 0 0 auto;
+    //margin: 0 0 0 auto;
+    color: $color-default-white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    z-index: 25;
 
-   @media (max-width: 1023px) {
-      margin: 0 24px 0 auto;
-    }
   }
 
   &__nav {
@@ -150,7 +152,7 @@
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    max-width: 450px;
+    max-width: 770px;
     padding: 0;
 
    @media (max-width: 1023px) {
@@ -190,9 +192,9 @@
   }
 
   &__link {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
     transition: color 0.3s ease;
     color: $color-default-white;
     padding-left: 10px;
@@ -228,13 +230,13 @@
     align-items: center;
     background-color: transparent;
     border: none;
-    color: #000000;
+    color: $color-default-white;
     display: none;
-    padding: 0;
+    padding: 26px 26px;
     position: relative;
     z-index: 25;
 
-   @media (max-width: 1023px) {
+    @include vp-1439 {
       display: flex;
       position: relative;
       transition: opacity 0.3s ease;

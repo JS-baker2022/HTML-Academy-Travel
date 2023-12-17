@@ -23,15 +23,19 @@
       <header class="header-example">
         <div class="container">
           <div class="header-example__container" data-header>
-            <button class="header-example__burger burger" data-burger></button>
+            <button class="header-example__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-burger="">
+              <svg class="header-example__burger-icon" width="26" height="26" aria-hidden="true">
+                <use href="img/sprite.svg#menu"></use>
+              </svg>
+            </button>
             <a class="header-example__logo" href="#">
               <span class="visually-hidden">Логотип турфирмы Lifetour.</span>
               <svg width="142" height="42">
                 <use href="img/sprite.svg#logotype"></use>
               </svg>
             </a>
-            <nav class="header-example__nav navigation">
-              <button class=""></button>
+            <nav class="header-example__nav">
+
               <ul class="header-example__list">
                 <li class="header-example__item"><a class="header-example__link" href="#">Туры</a></li>
                 <li class="header-example__item"><a class="header-example__link" href="#">Обучение</a></li>
@@ -41,11 +45,16 @@
                 <li class="header-example__item"><a class="header-example__link" href="#">Контакты</a></li>
               </ul>
             </nav>
-            <a class="header-example__link" href="tel:88007253232">8 800 725-32-32</a>
+            <a class="header-example__git-link" href="tel:88007253232">8 800 725-32-32</a>
           </div>
         </div>
       </header>
       <main>
+        <section class="hero">
+          <div class="container">
+
+          </div>
+        </section>
         <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
