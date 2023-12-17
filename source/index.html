@@ -24,8 +24,11 @@
         <div class="container">
           <div class="header-example__container" data-header>
             <button class="header-example__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-burger="">
-              <svg class="header-example__burger-icon" width="26" height="26" aria-hidden="true">
+              <svg class="header-example__burger-text" width="26" height="26" aria-hidden="true">
                 <use href="img/sprite.svg#menu"></use>
+              </svg>
+              <svg class="header-example__burger-icon" width="26" height="26" aria-hidden="true">
+                <use href="img/sprite.svg#close-menu"></use>
               </svg>
             </button>
             <a class="header-example__logo" href="#">
@@ -51,9 +54,98 @@
       </header>
       <main>
         <section class="hero">
-          <div class="container">
-
+          <div class="hero__swiper">
+            <ul class="hero__swiper-list">
+              <li class="hero__swiper-item">
+                <div class="container">
+                  <div class="hero__wrapper">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                    <a class="btn" href="#">Смотреть тур</a>
+                    <div class="hero__vidio">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/video-cover-tablet@1x.webp 1x, img/hero/video-cover-tablet@2x.webp 2x" width="442" height="300">
+                        <source type="image/webp" srcset="img/hero/video-cover-desktop@1x.webp 1x, img/hero/video-cover-desktop@2x.webp 2x" width="482" height="317">
+                        <source media="(max-width: 1199px)" srcset="img/hero/video-cover-tablet@1x.jpg 1x, img/hero/video-cover-tablet@2x.jpg 2x" width="442" height="300">
+                        <img src="img/hero/video-cover-desktop@1x.jpg" srcset="img/hero/video-cover-desktop@2x.jpg" alt="Постер для воспроизведения видел с туристом на вершине горы." width="482" height="317">
+                      </picture>
+                      <button class="hero__vidio-button">
+                        <svg width="12" height="22">
+                          <use href="img/sprite.svg#play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="hero__about-tour">
+                      <p class="hero__about-tour-duration">
+                        <svg width="12" height="12">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        6&nbsp;дней/5&nbsp;ночей
+                      </p>
+                      <p class="hero__about-tour-level">
+                        <svg width="12" height="12">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>
+                        Высокая&nbsp;сложность
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero/caucasus-mobile@1x.webp 1x, img/hero/caucasus-mobile@2x.webp 2x" width="362" height="568">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/caucasus-tablet@1x.webp 1x, img/hero/caucasus-tablet@2x.webp 2x" width="768" height="1024">
+                    <source type="image/webp" srcset="img/hero/caucasus-desktop@1x.webp 1x, img/hero/caucasus-desktop@2x.webp 2x" width="1440" height="800">
+                    <source media="(max-width: 767px)" srcset="img/hero/caucasus-mobile@1x.jpg 1x, img/hero/caucasus-mobile@2x.jpg 2x" width="362" height="568">
+                    <source media="(max-width: 1199px)" srcset="img/hero/caucasus-tablet@1x.jpg 1x, img/hero/caucasus-tablet@2x.jpg 2x" width="768" height="1024">
+                    <img src="img/hero/caucasus-desktop@1x.jpg" srcset="img/hero/caucasus-desktop@2x.jpg" alt="Вид на вершины Кавказких гор." width="1440" height="800">
+                  </picture>
+                </div>
+              </li>
+              <li class="hero__swiper-item">
+                <div class="container">
+                  <div class="hero__wrapper">
+                    <h2>Невероятная природа Камчатки</h2>
+                    <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                    <a class="btn" href="#">Смотреть тур</a>
+                    <div class="hero__item-photo">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/item-photo-tablet@1x.webp 1x, img/hero/item-photo-tablet@2x.webp 2x" width="442" height="300">
+                        <source type="image/webp" srcset="img/hero/item-photo-desktop@1x.webp 1x, img/hero/item-photo-desktop@2x.webp 2x" width="482" height="317">
+                        <source media="(max-width: 1199px)" srcset="img/hero/item-photo-tablet@1x.jpg 1x, img/hero/item-photo-tablet@2x.jpg 2x" width="442" height="300">
+                        <img src="img/hero/item-photo-desktop@1x.jpg" srcset="img/hero/item-photo-desktop@2x.jpg" alt="Постер для воспроизведения видел с туристом на вершине горы." width="482" height="317">
+                      </picture>
+                    </div>
+                    <div class="hero__about-tour">
+                      <p class="hero__about-tour-duration">
+                        <svg width="12" height="12">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        9&nbsp;дней/10&nbsp;ночей
+                      </p>
+                      <p class="hero__about-tour-level">
+                        <svg width="12" height="12">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>
+                        Средняя&nbsp;сложность
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero/caucasus-mobile@1x.webp 1x, img/hero/caucasus-mobile@2x.webp 2x" width="362" height="568">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/caucasus-tablet@1x.webp 1x, img/hero/caucasus-tablet@2x.webp 2x" width="768" height="1024">
+                    <source type="image/webp" srcset="img/hero/caucasus-desktop@1x.webp 1x, img/hero/caucasus-desktop@2x.webp 2x" width="1440" height="800">
+                    <source media="(max-width: 767px)" srcset="img/hero/caucasus-mobile@1x.jpg 1x, img/hero/caucasus-mobile@2x.jpg 2x" width="362" height="568">
+                    <source media="(max-width: 1199px)" srcset="img/hero/caucasus-tablet@1x.jpg 1x, img/hero/caucasus-tablet@2x.jpg 2x" width="768" height="1024">
+                    <img src="img/hero/caucasus-desktop@1x.jpg" srcset="img/hero/caucasus-desktop@2x.jpg" alt="Вид на вершины Кавказких гор." width="1440" height="800">
+                  </picture>
+                </div>
+              </li>
+            </ul>
           </div>
+
         </section>
         <section class="intro">
           <div class="container">
