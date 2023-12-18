@@ -53,15 +53,16 @@
         </div>
       </header>
       <main>
+        <h1 class="visually-hidden">Походы в горы вместе с Lifetour.</h1>
         <section class="hero">
-          <div class="hero__swiper">
-            <ul class="hero__swiper-list">
-              <li class="hero__swiper-item">
+          <div class="hero__swiper swiper" data-slider-wrapper="hero__swiper">
+            <ul class="hero__swiper-list swiper-wrapper">
+              <li class="hero__swiper-item swiper-slide">
                 <div class="container">
                   <div class="hero__wrapper">
                     <h2>Захватывающие вершины Кавказа</h2>
                     <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                    <a class="btn" href="#">Смотреть тур</a>
+                    <a class="hero-btn btn" href="#">Смотреть тур</a>
                     <div class="hero__vidio">
                       <picture>
                         <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/video-cover-tablet@1x.webp 1x, img/hero/video-cover-tablet@2x.webp 2x" width="442" height="300">
@@ -76,13 +77,13 @@
                       </button>
                     </div>
                     <div class="hero__about-tour">
-                      <p class="hero__about-tour-duration">
+                      <p class="hero__about-tour-option hero__about-tour-option--duration">
                         <svg width="12" height="12">
                           <use href="img/sprite.svg#moon"></use>
                         </svg>
                         6&nbsp;дней/5&nbsp;ночей
                       </p>
-                      <p class="hero__about-tour-level">
+                      <p class="hero__about-tour-option hero__about-tour-option--level">
                         <svg width="12" height="12">
                           <use href="img/sprite.svg#level"></use>
                         </svg>
@@ -102,28 +103,28 @@
                   </picture>
                 </div>
               </li>
-              <li class="hero__swiper-item">
+              <li class="hero__swiper-item swiper-slide">
                 <div class="container">
                   <div class="hero__wrapper">
                     <h2>Невероятная природа Камчатки</h2>
                     <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                    <a class="btn" href="#">Смотреть тур</a>
+                    <a class="hero-btn btn" href="#">Смотреть тур</a>
                     <div class="hero__item-photo">
                       <picture>
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/item-photo-tablet@1x.webp 1x, img/hero/item-photo-tablet@2x.webp 2x" width="442" height="300">
-                        <source type="image/webp" srcset="img/hero/item-photo-desktop@1x.webp 1x, img/hero/item-photo-desktop@2x.webp 2x" width="482" height="317">
-                        <source media="(max-width: 1199px)" srcset="img/hero/item-photo-tablet@1x.jpg 1x, img/hero/item-photo-tablet@2x.jpg 2x" width="442" height="300">
-                        <img src="img/hero/item-photo-desktop@1x.jpg" srcset="img/hero/item-photo-desktop@2x.jpg" alt="Постер для воспроизведения видел с туристом на вершине горы." width="482" height="317">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/item-photo-tablet@1x.webp 1x, img/hero/item-photo-tablet@2x.webp 2x" width="442" height="365">
+                        <source type="image/webp" srcset="img/hero/item-photo-desktop@1x.webp 1x, img/hero/item-photo-desktop@2x.webp 2x" width="410" height="459">
+                        <source media="(max-width: 1199px)" srcset="img/hero/item-photo-tablet@1x.png 1x, img/hero/item-photo-tablet@2x.png 2x" width="442" height="365">
+                        <img src="img/hero/item-photo-desktop@1x.png" srcset="img/hero/item-photo-desktop@2x.png" alt="Постер для воспроизведения видел с туристом на вершине горы." width="410" height="459">
                       </picture>
                     </div>
                     <div class="hero__about-tour">
-                      <p class="hero__about-tour-duration">
+                      <p class="hero__about-tour-option hero__about-tour-option--duration">
                         <svg width="12" height="12">
                           <use href="img/sprite.svg#moon"></use>
                         </svg>
                         9&nbsp;дней/10&nbsp;ночей
                       </p>
-                      <p class="hero__about-tour-level">
+                      <p class="hero__about-tour-option hero__about-tour-option--level">
                         <svg width="12" height="12">
                           <use href="img/sprite.svg#level"></use>
                         </svg>
@@ -134,26 +135,88 @@
                 </div>
                 <div class="hero__image">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero/caucasus-mobile@1x.webp 1x, img/hero/caucasus-mobile@2x.webp 2x" width="362" height="568">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/caucasus-tablet@1x.webp 1x, img/hero/caucasus-tablet@2x.webp 2x" width="768" height="1024">
-                    <source type="image/webp" srcset="img/hero/caucasus-desktop@1x.webp 1x, img/hero/caucasus-desktop@2x.webp 2x" width="1440" height="800">
-                    <source media="(max-width: 767px)" srcset="img/hero/caucasus-mobile@1x.jpg 1x, img/hero/caucasus-mobile@2x.jpg 2x" width="362" height="568">
-                    <source media="(max-width: 1199px)" srcset="img/hero/caucasus-tablet@1x.jpg 1x, img/hero/caucasus-tablet@2x.jpg 2x" width="768" height="1024">
-                    <img src="img/hero/caucasus-desktop@1x.jpg" srcset="img/hero/caucasus-desktop@2x.jpg" alt="Вид на вершины Кавказких гор." width="1440" height="800">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero/kamchatka-mobile@1x.webp 1x, img/hero/kamchatka-mobile@2x.webp 2x" width="362" height="568">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/kamchatka-tablet@1x.webp 1x, img/hero/kamchatka-tablet@2x.webp 2x" width="768" height="1024">
+                    <source type="image/webp" srcset="img/hero/kamchatka-desktop@1x.webp 1x, img/hero/kamchatka-desktop@2x.webp 2x" width="1440" height="800">
+                    <source media="(max-width: 767px)" srcset="img/hero/kamchatka-mobile@1x.jpg 1x, img/hero/kamchatka-mobile@2x.jpg 2x" width="362" height="568">
+                    <source media="(max-width: 1199px)" srcset="img/hero/kamchatka-tablet@1x.jpg 1x, img/hero/kamchatka-tablet@2x.jpg 2x" width="768" height="1024">
+                    <img src="img/hero/kamchatka-desktop@1x.jpg" srcset="img/hero/kamchatka-desktop@2x.jpg" alt="Вид на горы Камчатки." width="1440" height="800">
+                  </picture>
+                </div>
+              </li>
+              <li class="hero__swiper-item swiper-slide">
+                <div class="container">
+                  <div class="hero__wrapper">
+                    <h2>Магические пейзажи Алтайского Края</h2>
+                    <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                    <a class="hero-btn btn" href="#">Смотреть тур</a>
+                    <div class="hero__audio">
+                      <iframe src="https://music.yandex.ru/iframe/track/119107082/25474374" frameborder="0"></iframe>
+                    </div>
+                    <div class="hero__about-tour">
+                      <p class="hero__about-tour-option hero__about-tour-option--duration">
+                        <svg width="12" height="12">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        8&nbsp;дней/7&nbsp;ночей
+                      </p>
+                      <p class="hero__about-tour-option hero__about-tour-option--level">
+                        <svg width="12" height="12">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>
+                        Легкая&nbsp;сложность
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero/altai-mobile@1x.webp 1x, img/hero/altai-mobile@2x.webp 2x" width="362" height="568">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/altai-tablet@1x.webp 1x, img/hero/altai-tablet@2x.webp 2x" width="768" height="1024">
+                    <source type="image/webp" srcset="img/hero/altai-desktop@1x.webp 1x, img/hero/altai-desktop@2x.webp 2x" width="1440" height="800">
+                    <source media="(max-width: 767px)" srcset="img/hero/altai-mobile@1x.jpg 1x, img/hero/altai-mobile@2x.jpg 2x" width="362" height="568">
+                    <source media="(max-width: 1199px)" srcset="img/hero/altai-tablet@1x.jpg 1x, img/hero/altai-tablet@2x.jpg 2x" width="768" height="1024">
+                    <img src="img/hero/altai-desktop@1x.jpg" srcset="img/hero/altai-desktop@2x.jpg" alt="Вид на вершины Кавказких гор." width="1440" height="800">
                   </picture>
                 </div>
               </li>
             </ul>
+            <div class="hero__swiper-pagination swiper-pagination" data-slider-hero-pagination="hero__swiper">
+              <div class="container">
+                <span class="swiper-pagination-bullet" role="button"></span>
+                <span class="swiper-pagination-bullet" role="button"></span>
+                <span class="swiper-pagination-bullet" role="button"></span>
+              </div>
+
+            </div>
           </div>
 
         </section>
-        <section class="intro">
+        <section class="tours">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="tours__wrapper">
+              <h2 class="tours__title">Ближайшие туры</h2>
+              <div class="tours__buttons">
+                <button class="tours__btn-privios btn" type="button"></button>
+                <button class="tours_-btn-next btn" type="button"></button>
+              </div>
+              <ul class="tours__cards-list">
+                <li class="tours__card">
+                  <ul class="tours__card-data">
+                    <li class="tours__card-data-item"></li>
+                    <li class="tours__card-data-item"></li>
+                    <li class="tours__card-data-item"></li>
+                  </ul>
+                  <h3 class="tours__card-title"></h3>
+                  <ul class="tours__card-description">
+                    <li class="tours__card-description-item"></li>
+                    <li class="tours__card-description-item"></li>
+                    <li class="tours__card-description-item"></li>
+                  </ul>
+                </li>
+              </ul>
+              <a class="tours__link" href="#"></a>
+            </div>
           </div>
         </section>
       </main>
@@ -161,36 +224,6 @@
         <div class="container"></div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
