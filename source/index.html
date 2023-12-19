@@ -194,28 +194,322 @@
         </section>
         <section class="tours">
           <div class="container">
-            <div class="tours__wrapper">
+            <div class="tours__swiper swiper" data-tours="tours__swiper">
               <h2 class="tours__title">Ближайшие туры</h2>
-              <div class="tours__buttons">
-                <button class="tours__btn-privios btn" type="button"></button>
-                <button class="tours_-btn-next btn" type="button"></button>
+              <div class="tours__buttons swiper-navigation">
+                <button class="tours__btn-privios btn" type="button" data-tours-prev-button="tours__swiper">
+                  <svg class="tours__btn-privios-icon" width="13" height="6" aria-hidden="true">
+                    <use href="img/sprite.svg#btn-left-arrow"></use>
+                  </svg>
+                </button>
+                <button class="tours_-btn-next btn" type="button" data-tours-next-button="tours__swiper">
+                  <svg class="tours__btn-privios-icon" width="13" height="6" aria-hidden="true">
+                    <use href="img/sprite.svg#btn-right-arrow"></use>
+                  </svg>
+                </button>
               </div>
-              <ul class="tours__cards-list">
-                <li class="tours__card">
+              <ul class="tours__cards-list swiper-wrapper">
+                <li class="tours__card swiper-slide">
                   <ul class="tours__card-data">
-                    <li class="tours__card-data-item"></li>
-                    <li class="tours__card-data-item"></li>
-                    <li class="tours__card-data-item"></li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="16" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#location"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">Кавказ</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">4 дня</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#moon-card"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">3 ночи</span>
+                    </li>
                   </ul>
-                  <h3 class="tours__card-title"></h3>
+                  <h3 class="tours__card-title">Путешествие вокруг Эльбруса</h3>
                   <ul class="tours__card-description">
-                    <li class="tours__card-description-item"></li>
-                    <li class="tours__card-description-item"></li>
-                    <li class="tours__card-description-item"></li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-difficulty-level">Сложность:</span>
+                      <svg class="tours__card-description-item-icon" width="84" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#stars-4"></use>
+                      </svg>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-date">Даты набора:</span>
+                      <span class="tours__card-description-item-date-value">12.06–19.06</span>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-group">Группа:</span>
+                      <span class="tours__card-description-item-group-value">до 15 чел.</span>
+                    </li>
                   </ul>
+                  <div class="tours__card-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/elbrus-mobile@1x.webp 1x, img/tours/elbrus-mobile@2x.webp 2x" width="330" height="416">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/elbrus-tablet@1x.webp 1x, img/tours/elbrus-tablet@2x.webp 2x" width="458" height="416">
+                      <source type="image/webp" srcset="img/tours/elbrus-desktop@1x.webp 1x, img/tours/elbrus-desktop@2x.webp 2x" width="380" height="416">
+                      <source media="(max-width: 767px)" srcset="img/tours/elbrus-mobile@1x.jpg 1x, img/tours/elbrus-mobile@2x.jpg 2x" width="330" height="416">
+                      <source media="(max-width: 1199px)" srcset="img/tours/elbrus-tablet@1x.jpg 1x, img/tours/elbrus-tablet@2x.jpg 2x" width="458" height="416">
+                      <img src="img/tours/elbrus-desktop@1x.jpg" srcset="img/tours/elbrus-desktop@2x.jpg" alt="Вид на вершины Камчатки." width="380" height="416">
+                    </picture>
+                  </div>
+                </li>
+                <li class="tours__card swiper-slide">
+                  <ul class="tours__card-data">
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="16" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#location"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">Алтай</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">14 дней</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#moon-card"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">13 ночей</span>
+                    </li>
+                  </ul>
+                  <h3 class="tours__card-title">Путь к подножию Белухи</h3>
+                  <ul class="tours__card-description">
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-difficulty-level">Сложность:</span>
+                      <svg class="tours__card-description-item-icon" width="84" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#stars-3"></use>
+                      </svg>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-date">Даты набора:</span>
+                      <span class="tours__card-description-item-date-value">12.06-19.06</span>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-group">Группа:</span>
+                      <span class="tours__card-description-item-group-value">до 25 чел.</span>
+                    </li>
+                  </ul>
+                  <div class="tours__card-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.webp 1x, img/tours/belukha-mountain-mobile@2x.webp 2x" width="330" height="416">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.webp 1x, img/tours/belukha-mountain-tablet@2x.webp 2x" width="458" height="416">
+                      <source type="image/webp" srcset="img/tours/belukha-mountain-desktop@1x.webp 1x, img/tours/belukha-mountain-desktop@2x.webp 2x" width="380" height="416">
+                      <source media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.jpg 1x, img/tours/belukha-mountain-mobile@2x.jpg 2x" width="330" height="416">
+                      <source media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.jpg 1x, img/tours/belukha-mountain-tablet@2x.jpg 2x" width="458" height="416">
+                      <img src="img/tours/belukha-mountain-desktop@1x.jpg" srcset="img/tours/belukha-mountain-desktop@2x.jpg" alt="Подножие горы Белуха." width="380" height="416">
+                    </picture>
+                  </div>
+                </li>
+                <li class="tours__card swiper-slide">
+                  <ul class="tours__card-data">
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="16" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#location"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">Адыгея</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">7 дней</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#moon-card"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">6 ночей</span>
+                    </li>
+                  </ul>
+                  <h3 class="tours__card-title">Через Фишт к Чёрному морю и обратно</h3>
+                  <ul class="tours__card-description">
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-difficulty-level">Сложность:</span>
+                      <svg class="tours__card-description-item-icon" width="84" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#stars-4"></use>
+                      </svg>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-date">Даты набора:</span>
+                      <span class="tours__card-description-item-date-value">15.07–19.07</span>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-group">Группа:</span>
+                      <span class="tours__card-description-item-group-value">до 22 чел.</span>
+                    </li>
+                  </ul>
+                  <div class="tours__card-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.webp 1x, img/tours/belukha-mountain-mobile@2x.webp 2x" width="330" height="416">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.webp 1x, img/tours/belukha-mountain-tablet@2x.webp 2x" width="458" height="416">
+                      <source type="image/webp" srcset="img/tours/belukha-mountain-desktop@1x.webp 1x, img/tours/belukha-mountain-desktop@2x.webp 2x" width="380" height="416">
+                      <source media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.jpg 1x, img/tours/belukha-mountain-mobile@2x.jpg 2x" width="330" height="416">
+                      <source media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.jpg 1x, img/tours/belukha-mountain-tablet@2x.jpg 2x" width="458" height="416">
+                      <img src="img/tours/belukha-mountain-desktop@1x.jpg" srcset="img/tours/belukha-mountain-desktop@2x.jpg" alt="Путь через Фишт к Черному морю." width="380" height="416">
+                    </picture>
+                  </div>
+                </li>
+                <li class="tours__card swiper-slide">
+                  <ul class="tours__card-data">
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="16" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#location"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">Адыгея-1</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">7 дней</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#moon-card"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">6 ночей</span>
+                    </li>
+                  </ul>
+                  <h3 class="tours__card-title">Через Фишт к Чёрному морю и обратно</h3>
+                  <ul class="tours__card-description">
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-difficulty-level">Сложность:</span>
+                      <svg class="tours__card-description-item-icon" width="84" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#stars-4"></use>
+                      </svg>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-date">Даты набора:</span>
+                      <span class="tours__card-description-item-date-value">15.07–19.07</span>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-group">Группа:</span>
+                      <span class="tours__card-description-item-group-value">до 22 чел.</span>
+                    </li>
+                  </ul>
+                  <div class="tours__card-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.webp 1x, img/tours/belukha-mountain-mobile@2x.webp 2x" width="330" height="416">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.webp 1x, img/tours/belukha-mountain-tablet@2x.webp 2x" width="458" height="416">
+                      <source type="image/webp" srcset="img/tours/belukha-mountain-desktop@1x.webp 1x, img/tours/belukha-mountain-desktop@2x.webp 2x" width="380" height="416">
+                      <source media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.jpg 1x, img/tours/belukha-mountain-mobile@2x.jpg 2x" width="330" height="416">
+                      <source media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.jpg 1x, img/tours/belukha-mountain-tablet@2x.jpg 2x" width="458" height="416">
+                      <img src="img/tours/belukha-mountain-desktop@1x.jpg" srcset="img/tours/belukha-mountain-desktop@2x.jpg" alt="Путь через Фишт к Черному морю." width="380" height="416">
+                    </picture>
+                  </div>
+                </li>
+                <li class="tours__card swiper-slide">
+                  <ul class="tours__card-data">
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="16" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#location"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">Адыгея-2</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">7 дней</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#moon-card"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">6 ночей</span>
+                    </li>
+                  </ul>
+                  <h3 class="tours__card-title">Через Фишт к Чёрному морю и обратно</h3>
+                  <ul class="tours__card-description">
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-difficulty-level">Сложность:</span>
+                      <svg class="tours__card-description-item-icon" width="84" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#stars-4"></use>
+                      </svg>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-date">Даты набора:</span>
+                      <span class="tours__card-description-item-date-value">15.07–19.07</span>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-group">Группа:</span>
+                      <span class="tours__card-description-item-group-value">до 22 чел.</span>
+                    </li>
+                  </ul>
+                  <div class="tours__card-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.webp 1x, img/tours/belukha-mountain-mobile@2x.webp 2x" width="330" height="416">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.webp 1x, img/tours/belukha-mountain-tablet@2x.webp 2x" width="458" height="416">
+                      <source type="image/webp" srcset="img/tours/belukha-mountain-desktop@1x.webp 1x, img/tours/belukha-mountain-desktop@2x.webp 2x" width="380" height="416">
+                      <source media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.jpg 1x, img/tours/belukha-mountain-mobile@2x.jpg 2x" width="330" height="416">
+                      <source media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.jpg 1x, img/tours/belukha-mountain-tablet@2x.jpg 2x" width="458" height="416">
+                      <img src="img/tours/belukha-mountain-desktop@1x.jpg" srcset="img/tours/belukha-mountain-desktop@2x.jpg" alt="Путь через Фишт к Черному морю." width="380" height="416">
+                    </picture>
+                  </div>
+                </li>
+                <li class="tours__card swiper-slide">
+                  <ul class="tours__card-data">
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="16" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#location"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">Адыгея-3</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">7 дней</span>
+                    </li>
+                    <li class="tours__card-data-item">
+                      <svg class="tours__card-data-item-icon" width="20" height="20" aria-hidden="true">
+                        <use href="img/sprite.svg#moon-card"></use>
+                      </svg>
+                     <span class="tours__card-data-item-text">6 ночей</span>
+                    </li>
+                  </ul>
+                  <h3 class="tours__card-title">Через Фишт к Чёрному морю и обратно</h3>
+                  <ul class="tours__card-description">
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-difficulty-level">Сложность:</span>
+                      <svg class="tours__card-description-item-icon" width="84" height="16" aria-hidden="true">
+                        <use href="img/sprite.svg#stars-4"></use>
+                      </svg>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-date">Даты набора:</span>
+                      <span class="tours__card-description-item-date-value">15.07–19.07</span>
+                    </li>
+                    <li class="tours__card-description-item">
+                      <span class="tours__card-description-item-group">Группа:</span>
+                      <span class="tours__card-description-item-group-value">до 22 чел.</span>
+                    </li>
+                  </ul>
+                  <div class="tours__card-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.webp 1x, img/tours/belukha-mountain-mobile@2x.webp 2x" width="330" height="416">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.webp 1x, img/tours/belukha-mountain-tablet@2x.webp 2x" width="458" height="416">
+                      <source type="image/webp" srcset="img/tours/belukha-mountain-desktop@1x.webp 1x, img/tours/belukha-mountain-desktop@2x.webp 2x" width="380" height="416">
+                      <source media="(max-width: 767px)" srcset="img/tours/belukha-mountain-mobile@1x.jpg 1x, img/tours/belukha-mountain-mobile@2x.jpg 2x" width="330" height="416">
+                      <source media="(max-width: 1199px)" srcset="img/tours/belukha-mountain-tablet@1x.jpg 1x, img/tours/belukha-mountain-tablet@2x.jpg 2x" width="458" height="416">
+                      <img src="img/tours/belukha-mountain-desktop@1x.jpg" srcset="img/tours/belukha-mountain-desktop@2x.jpg" alt="Путь через Фишт к Черному морю." width="380" height="416">
+                    </picture>
+                  </div>
                 </li>
               </ul>
-              <a class="tours__link" href="#"></a>
+              <a class="tours__link" href="#">
+                <span class="tours__link-text">Показать все туры</span>
+                <svg class="tours__link-icon" width="6" height="12" aria-hidden="true">
+                  <use href="img/sprite.svg#link-arrow"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </section>
