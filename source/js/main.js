@@ -7,6 +7,7 @@ import {StickyHeader} from './header/sticky-header';
 import {initLocomotiveScroll} from './header/init-locomotive-scroll';
 import {initHeroSlider} from './modules/swiper/hero-swiper';
 import {initToursSlider} from './modules/swiper/tours-swiper';
+import {initTrainingSlider} from './modules/swiper/training-swiper';
 
 // ---------------------------------
 
@@ -33,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     stickyHeader.init();
     initHeroSlider();
     initToursSlider();
+    initTrainingSlider();
   });
 });
 
