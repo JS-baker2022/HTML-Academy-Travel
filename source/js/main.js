@@ -5,7 +5,8 @@ import './header/locomotive-scroll';
 import {Burger} from './header/burger';
 import {StickyHeader} from './header/sticky-header';
 import {initLocomotiveScroll} from './header/init-locomotive-scroll';
-import {initHeroSlider} from './modules/swiper/hero-swiper'
+import {initHeroSlider} from './modules/swiper/hero-swiper';
+import {initToursSlider} from './modules/swiper/tours-swiper';
 
 // ---------------------------------
 
@@ -31,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const stickyHeader = new StickyHeader();
     stickyHeader.init();
     initHeroSlider();
+    initToursSlider();
   });
 });
 
