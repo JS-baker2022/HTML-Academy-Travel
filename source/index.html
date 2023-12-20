@@ -514,195 +514,362 @@
           </div>
         </section>
         <section class="training">
-          <div class="training__wrapper container">
-            <h2 class="training__title">Обучение</h2>
-            <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-            <h3 class="training__coach-title">Наши инструкторы</h3>
-            <div class="training__buttons swiper-navigation">
-              <button class="training__btn-privios btn" type="button" data-training-prev-button="training__swiper">
-                <svg class="training__btn-privios-icon" width="13" height="6" aria-hidden="true">
+          <div class="container">
+            <div class="training__wrapper">
+              <h2 class="training__title">Обучение</h2>
+              <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+              <h3 class="training__coach-title">Наши инструкторы</h3>
+              <div class="training__buttons swiper-navigation">
+                <button class="training__btn-privios btn" type="button" data-training-prev-button="training__swiper">
+                  <svg class="training__btn-privios-icon" width="13" height="6" aria-hidden="true">
+                    <use href="img/sprite.svg#btn-left-arrow"></use>
+                  </svg>
+                </button>
+                <button class="training__btn-next btn" type="button" data-training-next-button="training__swiper">
+                  <svg class="training__btn-privios-icon" width="13" height="6" aria-hidden="true">
+                    <use href="img/sprite.svg#btn-right-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="training__swiper swiper" data-training="training__swiper">
+                <ul class="training__coach-list swiper-wrapper">
+                  <li class="training__coach-card swiper-slide">
+                    <div class="training__coach-card-image">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.webp 1x, img/training/coach-1-mobile@2x.webp 2x" width="290" height="200">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.webp 1x, img/training/coach-1-tablet@2x.webp 2x" width="268" height="200">
+                        <source type="image/webp" srcset="img/training/coach-1-desktop@1x.webp 1x, img/training/coach-1-desktop@2x.webp 2x" width="255" height="200">
+                        <source media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.jpg 1x, img/training/coach-1-mobile@2x.jpg 2x" width="290" height="200">
+                        <source media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.jpg 1x, img/training/coach-1-tablet@2x.jpg 2x" width="268" height="200">
+                        <img src="img/training/coach-1-desktop@1x.jpg" srcset="img/training/coach-1-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      </picture>
+                    </div>
+                    <div class="training__coach-card">
+                      <h4 class="training__coach-card-name">Александр Прокофьев</h4>
+                      <a class="training__coach-card-link" href="#">
+                        <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                      <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                    </div>
+                  </li>
+                  <li class="training__coach-card swiper-slide">
+                    <div class="training__coach-card-image">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-2-mobile@1x.webp 1x, img/training/coach-2-mobile@2x.webp 2x" width="290" height="200">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-2-tablet@1x.webp 1x, img/training/coach-2-tablet@2x.webp 2x" width="268" height="200">
+                        <source type="image/webp" srcset="img/training/coach-2-desktop@1x.webp 1x, img/training/coach-2-desktop@2x.webp 2x" width="255" height="200">
+                        <source media="(max-width: 767px)" srcset="img/training/coach-2-mobile@1x.jpg 1x, img/training/coach-2-mobile@2x.jpg 2x" width="290" height="200">
+                        <source media="(max-width: 1199px)" srcset="img/training/coach-2-tablet@1x.jpg 1x, img/training/coach-2-tablet@2x.jpg 2x" width="268" height="200">
+                        <img src="img/training/coach-2-desktop@1x.jpg" srcset="img/training/coach-2-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      </picture>
+                    </div>
+                    <div class="training__coach-card">
+                      <h4 class="training__coach-card-name">Светлана Афиногенова</h4>
+                      <a class="training__coach-card-link" href="#">
+                        <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                      <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                    </div>
+                  </li>
+                  <li class="training__coach-card swiper-slide">
+                    <div class="training__coach-card-image">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-3-mobile@1x.webp 1x, img/training/coach-3-mobile@2x.webp 2x" width="290" height="200">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-3-tablet@1x.webp 1x, img/training/coach-3-tablet@2x.webp 2x" width="268" height="200">
+                        <source type="image/webp" srcset="img/training/coach-3-desktop@1x.webp 1x, img/training/coach-3-desktop@2x.webp 2x" width="255" height="200">
+                        <source media="(max-width: 767px)" srcset="img/training/coach-3-mobile@1x.jpg 1x, img/training/coach-3-mobile@2x.jpg 2x" width="290" height="200">
+                        <source media="(max-width: 1199px)" srcset="img/training/coach-3-tablet@1x.jpg 1x, img/training/coach-3-tablet@2x.jpg 2x" width="268" height="200">
+                        <img src="img/training/coach-3-desktop@1x.jpg" srcset="img/training/coach-3-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      </picture>
+                    </div>
+                    <div class="training__coach-card">
+                      <h4 class="training__coach-card-name">Надежда Колесниченко</h4>
+                      <a class="training__coach-card-link" href="#">
+                        <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                      <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                    </div>
+                  </li>
+                  <li class="training__coach-card swiper-slide">
+                    <div class="training__coach-card-image">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-4-mobile@1x.webp 1x, img/training/coach-4-mobile@2x.webp 2x" width="290" height="200">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-4-tablet@1x.webp 1x, img/training/coach-4-tablet@2x.webp 2x" width="268" height="200">
+                        <source type="image/webp" srcset="img/training/coach-4-desktop@1x.webp 1x, img/training/coach-4-desktop@2x.webp 2x" width="255" height="200">
+                        <source media="(max-width: 767px)" srcset="img/training/coach-4-mobile@1x.jpg 1x, img/training/coach-4-mobile@2x.jpg 2x" width="290" height="200">
+                        <source media="(max-width: 1199px)" srcset="img/training/coach-4-tablet@1x.jpg 1x, img/training/coach-4-tablet@2x.jpg 2x" width="268" height="200">
+                        <img src="img/training/coach-4-desktop@1x.jpg" srcset="img/training/coach-4-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      </picture>
+                    </div>
+                    <div class="training__coach-card">
+                      <h4 class="training__coach-card-name">Федор Кайгородов</h4>
+                      <a class="training__coach-card-link" href="#">
+                        <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </div>
+                  </li>
+                  <li class="training__coach-card swiper-slide">
+                    <div class="training__coach-card-image">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-4-mobile@1x.webp 1x, img/training/coach-4-mobile@2x.webp 2x" width="290" height="200">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-4-tablet@1x.webp 1x, img/training/coach-4-tablet@2x.webp 2x" width="268" height="200">
+                        <source type="image/webp" srcset="img/training/coach-4-desktop@1x.webp 1x, img/training/coach-4-desktop@2x.webp 2x" width="255" height="200">
+                        <source media="(max-width: 767px)" srcset="img/training/coach-4-mobile@1x.jpg 1x, img/training/coach-4-mobile@2x.jpg 2x" width="290" height="200">
+                        <source media="(max-width: 1199px)" srcset="img/training/coach-4-tablet@1x.jpg 1x, img/training/coach-4-tablet@2x.jpg 2x" width="268" height="200">
+                        <img src="img/training/coach-4-desktop@1x.jpg" srcset="img/training/coach-4-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      </picture>
+                    </div>
+                    <div class="training__coach-card">
+                      <h4 class="training__coach-card-name">Федор Кайгородов-33</h4>
+                      <a class="training__coach-card-link" href="#">
+                        <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </div>
+                  </li>
+                  <li class="training__coach-card swiper-slide">
+                    <div class="training__coach-card-image">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.webp 1x, img/training/coach-1-mobile@2x.webp 2x" width="290" height="200">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.webp 1x, img/training/coach-1-tablet@2x.webp 2x" width="268" height="200">
+                        <source type="image/webp" srcset="img/training/coach-1-desktop@1x.webp 1x, img/training/coach-1-desktop@2x.webp 2x" width="255" height="200">
+                        <source media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.jpg 1x, img/training/coach-1-mobile@2x.jpg 2x" width="290" height="200">
+                        <source media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.jpg 1x, img/training/coach-1-tablet@2x.jpg 2x" width="268" height="200">
+                        <img src="img/training/coach-1-desktop@1x.jpg" srcset="img/training/coach-1-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      </picture>
+                    </div>
+                    <div class="training__coach-card">
+                      <h4 class="training__coach-card-name">Федор Кайгородов-34</h4>
+                      <a class="training__coach-card-link" href="#">
+                        <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </div>
+                  </li>
+                  <li class="training__coach-card swiper-slide">
+                    <div class="training__coach-card-image">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.webp 1x, img/training/coach-1-mobile@2x.webp 2x" width="290" height="200">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.webp 1x, img/training/coach-1-tablet@2x.webp 2x" width="268" height="200">
+                        <source type="image/webp" srcset="img/training/coach-1-desktop@1x.webp 1x, img/training/coach-1-desktop@2x.webp 2x" width="255" height="200">
+                        <source media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.jpg 1x, img/training/coach-1-mobile@2x.jpg 2x" width="290" height="200">
+                        <source media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.jpg 1x, img/training/coach-1-tablet@2x.jpg 2x" width="268" height="200">
+                        <img src="img/training/coach-1-desktop@1x.jpg" srcset="img/training/coach-1-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      </picture>
+                    </div>
+                    <div class="training__coach-card">
+                      <h4 class="training__coach-card-name">Федор Кайгородов-35</h4>
+                      <a class="training__coach-card-link" href="#">
+                        <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </div>
+                  </li>
+                  <li class="training__coach-card swiper-slide">
+                    <div class="training__coach-card-image">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.webp 1x, img/training/coach-1-mobile@2x.webp 2x" width="290" height="200">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.webp 1x, img/training/coach-1-tablet@2x.webp 2x" width="268" height="200">
+                        <source type="image/webp" srcset="img/training/coach-1-desktop@1x.webp 1x, img/training/coach-1-desktop@2x.webp 2x" width="255" height="200">
+                        <source media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.jpg 1x, img/training/coach-1-mobile@2x.jpg 2x" width="290" height="200">
+                        <source media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.jpg 1x, img/training/coach-1-tablet@2x.jpg 2x" width="268" height="200">
+                        <img src="img/training/coach-1-desktop@1x.jpg" srcset="img/training/coach-1-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      </picture>
+                    </div>
+                    <div class="training__coach-card">
+                      <h4 class="training__coach-card-name">Федор Кайгородов-36</h4>
+                      <a class="training__coach-card-link" href="#">
+                        <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="training__process">
+              <h3 class="training__process-title">Процесс обучения</h3>
+              <ul class="training__process-list">
+                <li class="training__process-list-item">
+                  <svg class="training__process-list-item-icon" width="25" height="25" aria-hidden="true">
+                    <use href="img/sprite.svg#map"></use>
+                  </svg>
+                  <p class="training__process-list-item-text">Изучение спортивного туристского движения</p>
+                </li>
+                <li class="training__process-list-item">
+                  <svg class="training__process-list-item-icon" width="25" height="25" aria-hidden="true">
+                    <use href="img/sprite.svg#boots"></use>
+                  </svg>
+                  <p class="training__process-list-item-text">Подготовка и техническое снаряжение в походах</p>
+                </li>
+                <li class="training__process-list-item">
+                  <svg class="training__process-list-item-icon" width="25" height="25" aria-hidden="true">
+                    <use href="img/sprite.svg#trees"></use>
+                  </svg>
+                  <p class="training__process-list-item-text">Лекции по окружающей среде, экологии и гигиене</p>
+                </li>
+                <li class="training__process-list-item">
+                  <svg class="training__process-list-item-icon" width="25" height="25" aria-hidden="true">
+                    <use href="img/sprite.svg#mountains"></use>
+                  </svg>
+                  <p class="training__process-list-item-text">Разъяснение сложности горных препятствий</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="about-us">
+          <div class="about-us__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/about/about-desktop@1x.webp 1x, img/about/about-desktop@2x.webp 2x" width="330" height="416">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/about/about-desktop@1x.webp 1x, img/about/about-desktop@2x.webp 2x" width="458" height="416">
+              <source type="image/webp" srcset="img/about/about-desktop@1x.webp 1x, img/about/about-desktop@2x.webp 2x" width="380" height="416">
+              <source media="(max-width: 767px)" srcset="img/about/about-desktop@1x.jpg 1x, img/about/about-desktop@2x.jpg 2x" width="434" height="400">
+              <source media="(max-width: 1199px)" srcset="img/about/about-desktop@1x.jpg 1x, img/about/about-desktop@2x.jpg 2x" width="542" height="360">
+              <img src="img/about/about-desktop@1x.jpg" srcset="img/about/about-desktop@2x.jpg" alt="Группа спускается с вершины в базовый лагерь." width="808" height="474">
+            </picture>
+          </div>
+          <div class="about-us__content">
+            <div class="container">
+              <h2 class="about-us__title">О нас</h2>
+              <div class="about-us__content-block">
+                <h3>История компании</h3>
+                <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+              </div>
+              <div class="about-us__content-block">
+                <h3>Наша цель</h3>
+                <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="container">
+            <div class="reviews__buttons swiper-navigation">
+              <button class="reviews__btn-privios btn" type="button" data-reviews-prev-button="reviews__swiper">
+                <svg class="reviews__btn-privios-icon" width="13" height="6" aria-hidden="true">
                   <use href="img/sprite.svg#btn-left-arrow"></use>
                 </svg>
               </button>
-              <button class="training_-btn-next btn" type="button" data-training-next-button="training__swiper">
-                <svg class="training__btn-privios-icon" width="13" height="6" aria-hidden="true">
+              <button class="reviews__btn-next btn" type="button" data-reviews-next-button="reviews__swiper">
+                <svg class="reviews__btn-privios-icon" width="13" height="6" aria-hidden="true">
                   <use href="img/sprite.svg#btn-right-arrow"></use>
                 </svg>
               </button>
             </div>
-            <div class="training__swiper swiper" data-training="training__swiper">
-              <ul class="training__coach-list swiper-wrapper">
-                <li class="training__coach-card swiper-slide">
-                  <div class="training__coach-card-image">
+            <div class="reviews__swiper swiper" data-reviews="reviews__swiper">
+              <ul class="reviews__list swiper-wrapper">
+                <li class="reviews__card swiper-slide">
+                  <div class="reviews__author-image">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.webp 1x, img/training/coach-1-mobile@2x.webp 2x" width="290" height="200">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.webp 1x, img/training/coach-1-tablet@2x.webp 2x" width="268" height="200">
-                      <source type="image/webp" srcset="img/training/coach-1-desktop@1x.webp 1x, iimg/training/coach-1-desktop@2x.webp 2x" width="255" height="200">
-                      <source media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.jpg 1x, img/training/coach-1-mobile@2x.jpg 2x" width="290" height="200">
-                      <source media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.jpg 1x, img/training/coach-1-tablet@2x.jpg 2x" width="268" height="200">
-                      <img src="img/training/coach-1-desktop@1x.jpg" srcset="img/training/coach-1-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/reviews/author-1-mobile@1x.webp 1x, img/reviews/author-1-mobile@2x.webp 2x" width="280" height="169">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/reviews/author-1-tablet@1x.webp 1x, img/reviews/author-1-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/reviews/author-1-desktop@1x.webp 1x, img/reviews/author-1-desktop@2x.webp 2x" width="258" height="253">
+                      <source media="(max-width: 767px)" srcset="img/reviews/author-1-mobile@1x.jpg 1x, img/reviews/author-1-mobile@2x.jpg 2x" width="280" height="169">
+                      <source media="(max-width: 1199px)" srcset="img/reviews/author-1-tablet@1x.jpg 1x, img/reviews/author-1-tablet@2x.jpg 2x" width="186" height="237">
+                      <img src="img/reviews/author-1-desktop@1x.jpg" srcset="img/reviews/author-1-desktop@2x.jpg" alt="Фото автора отзыва" width="258" height="253">
                     </picture>
                   </div>
-                  <div class="training__coach-card">
-                    <h4 class="training__coach-card-name">Александр Прокофьев</h4>
-                    <a class="training__coach-card-link" href="#">
-                      <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
-                        <use href="img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                    <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                  <div class="reviews__info">
+                    <div class="reviews__content">
+                      <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты — всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места.</p>
+                      <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+                    </div>
+                    <div class="reviews__author-info">
+                      <p class="reviews__author-name">Фролов Александр</p>
+                      <p class="reviews__author-details">38 лет, Москва</p>
+                    </div>
                   </div>
                 </li>
-                <li class="training__coach-card swiper-slide">
-                  <div class="training__coach-card-image">
+                <li class="reviews__card swiper-slide">
+                  <div class="reviews__author-image">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-2-mobile@1x.webp 1x, img/training/coach-2-mobile@2x.webp 2x" width="290" height="200">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-2-tablet@1x.webp 1x, img/training/coach-2-tablet@2x.webp 2x" width="268" height="200">
-                      <source type="image/webp" srcset="img/training/coach-2-desktop@1x.webp 1x, iimg/training/coach-2-desktop@2x.webp 2x" width="255" height="200">
-                      <source media="(max-width: 767px)" srcset="img/training/coach-2-mobile@1x.jpg 1x, img/training/coach-2-mobile@2x.jpg 2x" width="290" height="200">
-                      <source media="(max-width: 1199px)" srcset="img/training/coach-2-tablet@1x.jpg 1x, img/training/coach-2-tablet@2x.jpg 2x" width="268" height="200">
-                      <img src="img/training/coach-2-desktop@1x.jpg" srcset="img/training/coach-2-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/reviews/author-2-mobile@1x.webp 1x, img/reviews/author-2-mobile@2x.webp 2x" width="280" height="169">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/reviews/author-2-tablet@1x.webp 1x, img/reviews/author-2-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/reviews/author-2-desktop@1x.webp 1x, img/reviews/author-2-desktop@2x.webp 2x" width="258" height="253">
+                      <source media="(max-width: 767px)" srcset="img/reviews/author-2-mobile@1x.jpg 1x, img/reviews/author-2-mobile@2x.jpg 2x" width="280" height="169">
+                      <source media="(max-width: 1199px)" srcset="img/reviews/author-2-tablet@1x.jpg 1x, img/reviews/author-2-tablet@2x.jpg 2x" width="186" height="237">
+                      <img src="img/reviews/author-2-desktop@1x.jpg" srcset="img/reviews/author-2-desktop@2x.jpg" alt="Фото автора отзыва" width="258" height="253">
                     </picture>
                   </div>
-                  <div class="training__coach-card">
-                    <h4 class="training__coach-card-name">Светлана Афиногенова</h4>
-                    <a class="training__coach-card-link" href="#">
-                      <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
-                        <use href="img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                    <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                  <div class="reviews__info">
+                    <div class="reviews__content">
+                      <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
+                        Было очень интересно!</p>
+                      <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
+                        Всем советую этот тур.</p>
+                    </div>
+                    <div class="reviews__author-info">
+                      <p class="reviews__author-name">Иван Соловьёв</p>
+                      <p class="reviews__author-details">25 лет, Владивосток</p>
+                    </div>
                   </div>
                 </li>
-                <li class="training__coach-card swiper-slide">
-                  <div class="training__coach-card-image">
+                <li class="reviews__card swiper-slide">
+                  <div class="reviews__author-image">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-3-mobile@1x.webp 1x, img/training/coach-3-mobile@2x.webp 2x" width="290" height="200">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-3-tablet@1x.webp 1x, img/training/coach-3-tablet@2x.webp 2x" width="268" height="200">
-                      <source type="image/webp" srcset="img/training/coach-3-desktop@1x.webp 1x, iimg/training/coach-3-desktop@2x.webp 2x" width="255" height="200">
-                      <source media="(max-width: 767px)" srcset="img/training/coach-3-mobile@1x.jpg 1x, img/training/coach-3-mobile@2x.jpg 2x" width="290" height="200">
-                      <source media="(max-width: 1199px)" srcset="img/training/coach-3-tablet@1x.jpg 1x, img/training/coach-3-tablet@2x.jpg 2x" width="268" height="200">
-                      <img src="img/training/coach-3-desktop@1x.jpg" srcset="img/training/coach-3-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/reviews/author-3-mobile@1x.webp 1x, img/reviews/author-3-mobile@2x.webp 2x" width="280" height="169">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/reviews/author-3-tablet@1x.webp 1x, img/reviews/author-3-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/reviews/author-3-desktop@1x.webp 1x, img/reviews/author-3-desktop@2x.webp 2x" width="258" height="253">
+                      <source media="(max-width: 767px)" srcset="img/reviews/author-3-mobile@1x.jpg 1x, img/reviews/author-3-mobile@2x.jpg 2x" width="280" height="169">
+                      <source media="(max-width: 1199px)" srcset="img/reviews/author-3-tablet@1x.jpg 1x, img/reviews/author-3-tablet@2x.jpg 2x" width="186" height="237">
+                      <img src="img/reviews/author-3-desktop@1x.jpg" srcset="img/reviews/author-3-desktop@2x.jpg" alt="Фото автора отзыва" width="258" height="253">
                     </picture>
                   </div>
-                  <div class="training__coach-card">
-                    <h4 class="training__coach-card-name">Надежда Колесниченко</h4>
-                    <a class="training__coach-card-link" href="#">
-                      <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
-                        <use href="img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                    <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                  <div class="reviews__info">
+                    <div class="reviews__content">
+                      <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.</p>
+                      <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании</p>
+                    </div>
+                    <div class="reviews__author-info">
+                      <p class="reviews__author-name">Евгения Баженова</p>
+                      <p class="reviews__author-details">23 года, Кострома</p>
+                    </div>
                   </div>
+
                 </li>
-                <li class="training__coach-card swiper-slide">
-                  <div class="training__coach-card-image">
+                <li class="reviews__card swiper-slide">
+                  <div class="reviews__author-image">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-4-mobile@1x.webp 1x, img/training/coach-4-mobile@2x.webp 2x" width="290" height="200">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-4-tablet@1x.webp 1x, img/training/coach-4-tablet@2x.webp 2x" width="268" height="200">
-                      <source type="image/webp" srcset="img/training/coach-4-desktop@1x.webp 1x, iimg/training/coach-4-desktop@2x.webp 2x" width="255" height="200">
-                      <source media="(max-width: 767px)" srcset="img/training/coach-4-mobile@1x.jpg 1x, img/training/coach-4-mobile@2x.jpg 2x" width="290" height="200">
-                      <source media="(max-width: 1199px)" srcset="img/training/coach-4-tablet@1x.jpg 1x, img/training/coach-4-tablet@2x.jpg 2x" width="268" height="200">
-                      <img src="img/training/coach-4-desktop@1x.jpg" srcset="img/training/coach-4-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/reviews/author-4-mobile@1x.webp 1x, img/reviews/author-4-mobile@2x.webp 2x" width="280" height="169">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/reviews/author-4-tablet@1x.webp 1x, img/reviews/author-4-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/reviews/author-4-desktop@1x.webp 1x, img/reviews/author-4-desktop@2x.webp 2x" width="258" height="253">
+                      <source media="(max-width: 767px)" srcset="img/reviews/author-4-mobile@1x.jpg 1x, img/reviews/author-4-mobile@2x.jpg 2x" width="280" height="169">
+                      <source media="(max-width: 1199px)" srcset="img/reviews/author-4-tablet@1x.jpg 1x, img/reviews/author-4-tablet@2x.jpg 2x" width="186" height="237">
+                      <img src="img/reviews/author-4-desktop@1x.jpg" srcset="img/reviews/author-4-desktop@2x.jpg" alt="Фото автора отзыва" width="258" height="253">
                     </picture>
                   </div>
-                  <div class="training__coach-card">
-                    <h4 class="training__coach-card-name">Федор Кайгородов</h4>
-                    <a class="training__coach-card-link" href="#">
-                      <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
-                        <use href="img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                  <div class="reviews__info">
+                    <div class="reviews__content">
+                      <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину. </p>
+                      <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
+                    </div>
+                    <div class="reviews__author-info">
+                      <p class="reviews__author-name">Елена Пирогова</p>
+                      <p class="reviews__author-details">37 лет, Тюмень</p>
+                    </div>
                   </div>
-                </li>
-                <li class="training__coach-card swiper-slide">
-                  <div class="training__coach-card-image">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-4-mobile@1x.webp 1x, img/training/coach-4-mobile@2x.webp 2x" width="290" height="200">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-4-tablet@1x.webp 1x, img/training/coach-4-tablet@2x.webp 2x" width="268" height="200">
-                      <source type="image/webp" srcset="img/training/coach-4-desktop@1x.webp 1x, iimg/training/coach-4-desktop@2x.webp 2x" width="255" height="200">
-                      <source media="(max-width: 767px)" srcset="img/training/coach-4-mobile@1x.jpg 1x, img/training/coach-4-mobile@2x.jpg 2x" width="290" height="200">
-                      <source media="(max-width: 1199px)" srcset="img/training/coach-4-tablet@1x.jpg 1x, img/training/coach-4-tablet@2x.jpg 2x" width="268" height="200">
-                      <img src="img/training/coach-4-desktop@1x.jpg" srcset="img/training/coach-4-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
-                    </picture>
-                  </div>
-                  <div class="training__coach-card">
-                    <h4 class="training__coach-card-name">Федор Кайгородов-33</h4>
-                    <a class="training__coach-card-link" href="#">
-                      <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
-                        <use href="img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
-                  </div>
-                </li>
-                <li class="training__coach-card swiper-slide">
-                  <div class="training__coach-card-image">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.webp 1x, img/training/coach-1-mobile@2x.webp 2x" width="290" height="200">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.webp 1x, img/training/coach-1-tablet@2x.webp 2x" width="268" height="200">
-                      <source type="image/webp" srcset="img/training/coach-1-desktop@1x.webp 1x, iimg/training/coach-1-desktop@2x.webp 2x" width="255" height="200">
-                      <source media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.jpg 1x, img/training/coach-1-mobile@2x.jpg 2x" width="290" height="200">
-                      <source media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.jpg 1x, img/training/coach-1-tablet@2x.jpg 2x" width="268" height="200">
-                      <img src="img/training/coach-1-desktop@1x.jpg" srcset="img/training/coach-1-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
-                    </picture>
-                  </div>
-                  <div class="training__coach-card">
-                    <h4 class="training__coach-card-name">Федор Кайгородов-34</h4>
-                    <a class="training__coach-card-link" href="#">
-                      <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
-                        <use href="img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
-                  </div>
-                </li>
-                <li class="training__coach-card swiper-slide">
-                  <div class="training__coach-card-image">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.webp 1x, img/training/coach-1-mobile@2x.webp 2x" width="290" height="200">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.webp 1x, img/training/coach-1-tablet@2x.webp 2x" width="268" height="200">
-                      <source type="image/webp" srcset="img/training/coach-1-desktop@1x.webp 1x, iimg/training/coach-1-desktop@2x.webp 2x" width="255" height="200">
-                      <source media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.jpg 1x, img/training/coach-1-mobile@2x.jpg 2x" width="290" height="200">
-                      <source media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.jpg 1x, img/training/coach-1-tablet@2x.jpg 2x" width="268" height="200">
-                      <img src="img/training/coach-1-desktop@1x.jpg" srcset="img/training/coach-1-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
-                    </picture>
-                  </div>
-                  <div class="training__coach-card">
-                    <h4 class="training__coach-card-name">Федор Кайгородов-35</h4>
-                    <a class="training__coach-card-link" href="#">
-                      <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
-                        <use href="img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
-                  </div>
-                </li>
-                <li class="training__coach-card swiper-slide">
-                  <div class="training__coach-card-image">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.webp 1x, img/training/coach-1-mobile@2x.webp 2x" width="290" height="200">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.webp 1x, img/training/coach-1-tablet@2x.webp 2x" width="268" height="200">
-                      <source type="image/webp" srcset="img/training/coach-1-desktop@1x.webp 1x, iimg/training/coach-1-desktop@2x.webp 2x" width="255" height="200">
-                      <source media="(max-width: 767px)" srcset="img/training/coach-1-mobile@1x.jpg 1x, img/training/coach-1-mobile@2x.jpg 2x" width="290" height="200">
-                      <source media="(max-width: 1199px)" srcset="img/training/coach-1-tablet@1x.jpg 1x, img/training/coach-1-tablet@2x.jpg 2x" width="268" height="200">
-                      <img src="img/training/coach-1-desktop@1x.jpg" srcset="img/training/coach-1-desktop@2x.jpg" alt="Фото тренера" width="255" height="200">
-                    </picture>
-                  </div>
-                  <div class="training__coach-card">
-                    <h4 class="training__coach-card-name">Федор Кайгородов-36</h4>
-                    <a class="training__coach-card-link" href="#">
-                      <svg class="training__coach-card-icon" width="14" height="8" aria-hidden="true">
-                        <use href="img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
-                  </div>
+
                 </li>
               </ul>
             </div>
-
           </div>
         </section>
       </main>
