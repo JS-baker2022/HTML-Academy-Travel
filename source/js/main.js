@@ -9,6 +9,7 @@ import {initHeroSlider} from './modules/swiper/hero-swiper';
 import {initToursSlider} from './modules/swiper/tours-swiper';
 import {initTrainingSlider} from './modules/swiper/training-swiper';
 import {initReviewsSlider} from './modules/swiper/reviews-swiper';
+import {initAdvantageSlider} from './modules/swiper/advantage-swiper';
 
 // ---------------------------------
 
@@ -37,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initToursSlider();
     initTrainingSlider();
     initReviewsSlider();
+    initAdvantageSlider();
   });
 });
 
