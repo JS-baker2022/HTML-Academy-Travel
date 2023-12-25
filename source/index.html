@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Второй проект производства HTML Academy">
     <title>HTML-Academy-Travel</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-500.woff2 as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-800.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-800.woff2" type="font/woff2"  as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -21,36 +21,35 @@
   <body>
     <div class="wrapper">
       <header class="header-example">
-        <div class="container">
-          <div class="header-example__container" data-header>
-            <button class="header-example__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-burger="">
-              <svg class="header-example__burger-text" width="26" height="26" aria-hidden="true">
-                <use href="img/sprite.svg#menu"></use>
-              </svg>
-              <svg class="header-example__burger-icon" width="26" height="26" aria-hidden="true">
-                <use href="img/sprite.svg#close-menu"></use>
-              </svg>
-            </button>
-            <a class="header-example__logo" href="#">
-              <span class="visually-hidden">Логотип турфирмы Lifetour.</span>
-              <svg width="142" height="42">
-                <use href="img/sprite.svg#logotype"></use>
-              </svg>
-            </a>
-            <nav class="header-example__nav">
-
-              <ul class="header-example__list">
-                <li class="header-example__item"><a class="header-example__link" href="#tours">Туры</a></li>
-                <li class="header-example__item"><a class="header-example__link" href="#training">Обучение</a></li>
-                <li class="header-example__item"><a class="header-example__link" href="#about-us">О нас</a></li>
-                <li class="header-example__item"><a class="header-example__link" href="#reviews">Отзывы</a></li>
-                <li class="header-example__item"><a class="header-example__link" href="#gallery">Фотографии</a></li>
-                <li class="header-example__item"><a class="header-example__link" href="#contacts">Контакты</a></li>
-              </ul>
-            </nav>
-            <a class="header-example__git-link" href="tel:88007253232">8 800 725-32-32</a>
+          <div class="container">
+            <div class="header-example__container" data-header>
+              <button class="header-example__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-burger="">
+                <svg class="header-example__burger-text" width="26" height="26" aria-hidden="true">
+                  <use href="img/sprite.svg#menu"></use>
+                </svg>
+                <svg class="header-example__burger-icon" width="26" height="26" aria-hidden="true">
+                  <use href="img/sprite.svg#close-menu"></use>
+                </svg>
+              </button>
+              <a class="header-example__logo" href="#">
+                <span class="visually-hidden">Логотип турфирмы Lifetour.</span>
+                <svg width="142" height="42">
+                  <use href="img/sprite.svg#logotype"></use>
+                </svg>
+              </a>
+              <nav class="header-example__nav" aria-label="Основная навигация.">
+                <ul class="header-example__list">
+                  <li class="header-example__item"><a class="header-example__link" href="#tours">Туры</a></li>
+                  <li class="header-example__item"><a class="header-example__link" href="#training">Обучение</a></li>
+                  <li class="header-example__item"><a class="header-example__link" href="#about-us">О нас</a></li>
+                  <li class="header-example__item"><a class="header-example__link" href="#reviews">Отзывы</a></li>
+                  <li class="header-example__item"><a class="header-example__link" href="#gallery">Фотографии</a></li>
+                  <li class="header-example__item"><a class="header-example__link" href="#contacts">Контакты</a></li>
+                </ul>
+              </nav>
+              <a class="header-example__git-link" href="tel:88007253232">8 800 725-32-32</a>
+            </div>
           </div>
-        </div>
       </header>
       <main>
         <h1 class="visually-hidden">Походы в горы вместе с Lifetour.</h1>
@@ -151,7 +150,7 @@
                     <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
                     <a class="hero-btn btn" href="#">Смотреть тур</a>
                     <div class="hero__audio">
-                      <iframe src="https://music.yandex.ru/iframe/track/119107082/25474374" frameborder="0"></iframe>
+                      <iframe src="https://music.yandex.ru/album/25474374?dir=desc&activeTab=track-list" loading="lazy" title="Про код"></iframe>
                     </div>
                     <div class="hero__about-tour">
                       <p class="hero__about-tour-option hero__about-tour-option--duration">
@@ -202,7 +201,7 @@
                     <use href="img/sprite.svg#btn-left-arrow"></use>
                   </svg>
                 </button>
-                <button class="tours_-btn-next btn" type="button" data-tours-next-button="tours__swiper">
+                <button class="tours__btn-next btn" type="button" data-tours-next-button="tours__swiper">
                   <svg class="tours__btn-privios-icon" width="13" height="6" aria-hidden="true">
                     <use href="img/sprite.svg#btn-right-arrow"></use>
                   </svg>
@@ -762,6 +761,7 @@
         </section>
         <section class="reviews" id="reviews">
           <div class="container">
+            <h2 class="reviews__title">Отзывы</h2>
             <div class="reviews__buttons swiper-navigation">
               <button class="reviews__btn-privios btn" type="button" data-reviews-prev-button="reviews__swiper">
                 <svg class="reviews__btn-privios-icon" width="13" height="6" aria-hidden="true">
@@ -952,7 +952,7 @@
                   </svg>
                 </button>
                 <button class="gallery__btn-next btn" type="button" data-gallery-next-button="gallery__swiper">
-                  <svg class="gallery__btn-privios-icon" width="13" height="6" aria-hidden="true">
+                  <svg class="gallery__btn-next-icon" width="13" height="6" aria-hidden="true">
                     <use href="img/sprite.svg#btn-right-arrow"></use>
                   </svg>
                 </button>
@@ -1076,13 +1076,13 @@
         <section class="contacts" id="contacts">
           <div class="container">
             <div class="contacts__container">
-              <h2></h2>
+              <h2 class="contacts__title">Контакты</h2>
               <div class="contacts__wrapper">
-                <p></p>
+                <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
                 <ul class="contacts__list">
                   <li class="contacts__item">
                     <div class="contacts__item-image">
-                      <svg class="gallery__btn-privios-icon" width="26" height="26" aria-hidden="true">
+                      <svg class="contacts__item-image-icon" width="26" height="26" aria-hidden="true">
                         <use href="img/sprite.svg#phone"></use>
                       </svg>
                     </div>
@@ -1093,7 +1093,7 @@
                   </li>
                   <li class="contacts__item">
                     <div class="contacts__item-image">
-                      <svg class="gallery__btn-privios-icon" width="26" height="26" aria-hidden="true">
+                      <svg class="contacts__item-image-icon" width="26" height="26" aria-hidden="true">
                         <use href="img/sprite.svg#mail"></use>
                       </svg>
                     </div>
@@ -1104,7 +1104,7 @@
                   </li>
                   <li class="contacts__item">
                     <div class="contacts__item-image">
-                      <svg class="gallery__btn-privios-icon" width="26" height="26" aria-hidden="true">
+                      <svg class="contacts__item-image-icon" width="26" height="26" aria-hidden="true">
                         <use href="img/sprite.svg#pin_stroke"></use>
                       </svg>
                     </div>
@@ -1138,7 +1138,7 @@
                 <use href="img/sprite.svg#logotype"></use>
               </svg>
             </a>
-            <nav class="footer__nav">
+            <nav class="footer__nav" aria-label="Навигация в футоре сайта.">
               <ul class="footer__list">
                 <li class="footer__item"><a class="footer__item-link" href="#tours">Туры</a></li>
                 <li class="footer__item"><a class="footer__item-link" href="#training">Обучение</a></li>
