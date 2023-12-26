@@ -9,7 +9,7 @@ const initTrainingSlider = () => {
       grabCursor: true,
       speed: 600,
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 20,
 
       navigation: {
         prevEl: `[data-training-prev-button="${sectionClassName}"]`,
