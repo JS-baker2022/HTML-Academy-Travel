@@ -1,0 +1,61 @@
+.training__process {
+  padding-top: 57px;
+}
+
+.training__process-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.training__process-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $color-coach-training-line;
+    bottom: 6px;
+    left: 17px;
+    width: 100vw;
+    margin-right: calc((1440px - 100vw)/2);
+  }
+}
+
+.training__process-list-item {
+  max-width: 253px;
+  display: flex;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 27px;
+  padding-bottom: 16px;
+  gap: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $color-bondi-blue-img-background;
+    bottom: 0;
+    left: 10px;
+  }
+}
+
+.training__process-list-item-text {
+  max-width: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
