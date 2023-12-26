@@ -1,18 +1,35 @@
 .tours__swiper {
-  padding-bottom: 50px;
+  padding-top: 123px;
+  padding-bottom: 140px;
 }
 
 .tours__title {
-  font-size: 55px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 800;
-  line-height: 55px;
+  line-height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+
+  &::before {
+    content: "Ближайшие туры";
+    position: absolute;
+    top: 105px;
+    left: 0;
+    margin: 0;
+    font-size: 55px;
+    line-height: 55px;
+    color: $color-elephant-opacity-03;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
 .tours__buttons {
   position: absolute;
-  top: 22px;
   right: 0;
+  top: 120px;
 }
 
 .tours__cards-list {
@@ -108,6 +125,7 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+  letter-spacing: 0.64px;
   color: $color-elephant-tour-link;
   display: flex;
   justify-content: center;

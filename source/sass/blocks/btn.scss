@@ -10,12 +10,17 @@
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  &--hero {
+    padding: 17px 34px;
+  }
+
+  &--swiper {
+    padding: 15px 12px;
+
   }
 
   &:disabled {
-    opacity: 0.5;
+    background-color: $color-btn-disable;
 
     pointer-events: none;
   }
