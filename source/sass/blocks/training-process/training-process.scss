@@ -27,9 +27,8 @@
     background-color: $color-coach-training-line;
     bottom: 6px;
     left: 17px;
-    width: 100vw;
-    margin-right: calc((1440px - 100vw)/2);
-  }
+    right: 0;
+    }
 }
 
 .training__process-list-item {

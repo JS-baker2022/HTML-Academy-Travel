@@ -9,7 +9,7 @@ const initReviewsSlider = () => {
       grabCursor: true,
       speed: 600,
       slidesPerView: 'auto',
-      spaceBetween: 30,
+      spaceBetween: 120,
 
       navigation: {
         prevEl: `[data-reviews-prev-button="${sectionClassName}"]`,

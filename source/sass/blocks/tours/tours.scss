@@ -59,17 +59,21 @@
   font-style: normal;
   font-weight: 300;
   line-height: 12px;
-
-
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
+  gap: 16px;
 }
 
 .tours__card-data-item {
   display: flex;
   align-items: center;
+  gap: 6px;
 
   &:first-child {
     margin-right: auto;
     background-color: $color-navy-blue-header-background;
+    padding: 5px 12px;
   }
 }
 
@@ -79,6 +83,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 31px;
+  width: 300px;
 }
 
 .tours__card-description {
@@ -96,6 +104,11 @@
   font-weight: 300;
   line-height: 12px;
   color: $color-default-white;
+
+  &:first-child {
+    gap: 4px;
+  }
+
 }
 
 .tours__card-image {
@@ -115,10 +128,23 @@
   padding-bottom: 7px;
 }
 
+.tours__card-description-item-date-value {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px;
+}
+
 .tours__card-description-item-group {
   padding-bottom: 7px;
 }
 
+.tours__card-description-item-group-value {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px;
+}
 .tours__link {
   font-size: 16px;
   font-style: normal;
@@ -131,4 +157,12 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+
+.tours__card-data-item-text {
+  padding-left: 7px;
+
+  &--location {
+    padding-left: 0;
+  }
 }

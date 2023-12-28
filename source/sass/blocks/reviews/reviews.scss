@@ -1,0 +1,98 @@
+
+.reviews__container {
+  position: relative;
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+
+  &::before {
+    content: "Отзывы";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    margin: 0;
+    font-size: 55px;
+    line-height: 55px;
+    color: $color-elephant-opacity-03;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.reviews__buttons {
+  position: absolute;
+  top: 39px;
+  right: 0;
+}
+
+.reviews__list  {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+}
+
+.reviews__card {
+  display: flex;
+  max-width: 700px;
+  min-height: 293px;
+  padding: 25px 40px 20px 30px;
+  box-shadow: 0 0 20px 0 $color-reviews-shadow;
+  background-color: $color-default-white;
+  gap: 30px;
+
+}
+
+
+
+.reviews__author-image {
+  flex-shrink: 0;
+}
+
+.reviews__content p{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 14px;
+}
+
+.reviews__author-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.reviews__author-details {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+

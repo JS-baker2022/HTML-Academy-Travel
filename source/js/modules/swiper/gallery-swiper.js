@@ -9,7 +9,7 @@ const initGallerySlider = () => {
       grabCursor: true,
       speed: 600,
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 5,
 
       navigation: {
         prevEl: `[data-gallery-prev-button="${sectionClassName}"]`,
