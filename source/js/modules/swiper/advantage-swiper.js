@@ -7,6 +7,7 @@ const initAdvantageSlider = () => {
   if (advantageContainer) {
     return new Swiper(`[data-advantage="${sectionClassName}"]`, {
       grabCursor: true,
+      loop: true,
       speed: 600,
       slidesPerView: 'auto',
       spaceBetween: 30,

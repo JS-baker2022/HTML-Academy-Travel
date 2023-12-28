@@ -5,9 +5,9 @@
 
 .contacts__container {
   display: grid;
-  grid-template-areas:  "title title"
-                        "contacts map";
-
+  grid-template-areas:
+    "title title"
+    "contacts map";
 }
 
 .contacts__title {
@@ -56,7 +56,6 @@
   gap: 34px;
   display: flex;
   flex-direction: column;
-
 }
 
 .contacts__item {

@@ -54,7 +54,7 @@
   list-style: none;
   display: flex;
   color: $color-default-white;
-  column-gap: 14px;
+  column-gap: 16px;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -62,13 +62,12 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 16px;
-  gap: 16px;
 }
 
 .tours__card-data-item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  column-gap: 6px;
 
   &:first-child {
     margin-right: auto;
@@ -108,7 +107,6 @@
   &:first-child {
     gap: 4px;
   }
-
 }
 
 .tours__card-image {
@@ -145,6 +143,7 @@
   font-weight: 700;
   line-height: 13px;
 }
+
 .tours__link {
   font-size: 16px;
   font-style: normal;

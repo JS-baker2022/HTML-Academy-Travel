@@ -1,6 +1,7 @@
 .hero {
   color: $color-default-white;
 }
+
 .hero__swiper-list {
   margin-top: 0;
   margin-bottom: 0;
@@ -45,7 +46,6 @@
   margin-bottom: 0;
   max-width: 460px;
   z-index: 5;
-
 }
 
 .hero-btn {
@@ -82,7 +82,7 @@
   height: 317px;
 }
 
-.hero__vidio iframe{
+.hero__vidio iframe {
   border: 0;
   width: 100%;
   height: 100%;
@@ -104,7 +104,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -135,7 +135,7 @@
   }
 }
 
-.hero__vidio-button svg{
+.hero__vidio-button svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -149,7 +149,6 @@
   bottom: 0;
   left: 0;
   z-index: -1;
-
 }
 
 .hero__image img {
@@ -157,4 +156,3 @@
   width: 100%;
   height: 100%;
 }
-

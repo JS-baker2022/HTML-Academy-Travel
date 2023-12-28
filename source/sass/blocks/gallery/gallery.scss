@@ -29,7 +29,7 @@
   line-height: 24px;
 }
 
-.gallery__buttons  {
+.gallery__buttons {
   position: absolute;
   top: 64px;
   right: 0;
@@ -43,7 +43,6 @@
 }
 
 .gallery__item {
-
   &--full {
     max-width: 275px;
   }
@@ -57,11 +56,12 @@
   margin-bottom: 5px;
 }
 
-.gallery__item-image--half-top img{
+.gallery__item-image--half-top img {
   object-fit: cover;
   width: 100%;
 }
-.gallery__item-image--half-bottom img{
+
+.gallery__item-image--half-bottom img {
   object-fit: cover;
   width: 100%;
 }

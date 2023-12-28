@@ -63,7 +63,7 @@
 .training__buttons {
   position: absolute;
   top: 207px;
-  right: 0px;
+  right: 0;
   z-index: 2;
 }
 
@@ -111,7 +111,7 @@
   padding-top: 12px;
 }
 
-.training__coach-card-text-content p{
+.training__coach-card-text-content p {
   margin-top: 0;
   margin-bottom: 0;
 }

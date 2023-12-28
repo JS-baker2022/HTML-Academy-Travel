@@ -36,12 +36,11 @@
   right: 0;
 }
 
-.reviews__list  {
+.reviews__list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-
 }
 
 .reviews__card {
@@ -52,16 +51,13 @@
   box-shadow: 0 0 20px 0 $color-reviews-shadow;
   background-color: $color-default-white;
   gap: 30px;
-
 }
-
-
 
 .reviews__author-image {
   flex-shrink: 0;
 }
 
-.reviews__content p{
+.reviews__content p {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -94,5 +90,3 @@
   font-weight: 300;
   line-height: 100%;
 }
-
-
